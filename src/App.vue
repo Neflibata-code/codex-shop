@@ -24,7 +24,7 @@ const dishes = [
       <div class="hero-content">
         <p class="eyebrow light"><i></i> 杭州 · 江南时令料理</p>
         <p class="hero-season">二〇二六 · 秋</p>
-        <h1>山野入席 <em>四季有味</em></h1>
+        <h1>江南入味 <em>山水成席</em></h1>
         <p class="hero-copy">循着节气寻找山川风物，以克制的火候与当代手法，让每一席都尝得到江南此刻的鲜活。</p>
         <div class="hero-actions"><a class="button gold" href="#reservation">即刻订座 <ArrowUpRight :size="18" /></a><a class="button ghost" href="#menu">览当季菜单 <ArrowDownRight :size="18" /></a></div>
       </div>
