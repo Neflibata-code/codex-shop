@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://heyan-jiangnan.balmy-box-2170.chatgpt.site'),
   title: '禾宴｜江南时令料理',
   description: '循着二十四节气，以当代手法呈现江南山野的鲜活滋味。',
   openGraph: {
