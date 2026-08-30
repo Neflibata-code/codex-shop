@@ -5,10 +5,8 @@
     "typescript",
     "unicorn",
     "oxc",
-    "react",
     "import",
-    "jsx-a11y",
-    "nextjs"
+    "vue"
   ],
   "categories": {
     "correctness": "error"
@@ -23,13 +21,11 @@
     "typeCheck": true
   },
   "ignorePatterns": [
-    ".next/**",
-    ".vinext/**",
     "out/**",
     "build/**",
     "dist/**",
     "coverage/**",
-    "next-env.d.ts"
+    "vite-env.d.ts"
   ],
   "rules": {
     "no-array-constructor": "error",
@@ -38,12 +34,6 @@
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "import/no-anonymous-default-export": "warn",
-    "react/display-name": "error",
-    "react/jsx-no-comment-textnodes": "error",
-    "react/no-unescaped-entities": "error",
-    "react/react-compiler": "error",
-    "react/require-render-return": "error",
-    "react/rules-of-hooks": "error",
     "typescript/ban-ts-comment": "error",
     "typescript/no-deprecated": "error",
     "typescript/no-empty-object-type": "error",
