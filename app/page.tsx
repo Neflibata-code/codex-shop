@@ -1,7 +1,4 @@
 import { ArrowDownRight, ArrowUpRight, Clock3, MapPin } from 'lucide-react';
-import Image from 'next/image';
-import { buttonVariants } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
 
 const dishes = [
   {
@@ -55,10 +52,7 @@ export default function Home() {
           </nav>
           <a
             href="#reservation"
-            className={cn(
-              buttonVariants(),
-              'h-10 rounded-none border border-[#d5ad78] bg-[#d5ad78] px-5 text-[#18211d] hover:bg-[#e5c497]',
-            )}
+            className="inline-flex h-10 items-center justify-center border border-[#d5ad78] bg-[#d5ad78] px-5 text-sm font-medium text-[#18211d] transition-colors hover:bg-[#e5c497] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e5c497]"
           >
             预订餐位
           </a>
@@ -69,13 +63,11 @@ export default function Home() {
         id="top"
         className="relative min-h-[760px] bg-[#17201c] text-white lg:min-h-[850px]"
       >
-        <Image
+        {/* oxlint-disable-next-line next/no-img-element */}
+        <img
           src="/hero-food.jpg"
           alt="一桌精心摆盘的时令菜肴"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-55"
+          className="absolute inset-0 h-full w-full object-cover opacity-55"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(16,29,23,.9)_0%,rgba(16,29,23,.45)_53%,rgba(16,29,23,.12)_100%)]" />
         <div className="relative mx-auto flex min-h-[760px] max-w-[1440px] items-end px-5 pb-16 pt-36 md:px-10 lg:min-h-[850px] lg:px-16 lg:pb-24">
@@ -96,19 +88,13 @@ export default function Home() {
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#reservation"
-                className={cn(
-                  buttonVariants(),
-                  'h-12 rounded-none bg-[#d5ad78] px-7 text-[#18211d] hover:bg-[#e5c497]',
-                )}
+                className="inline-flex h-12 items-center justify-center gap-2 bg-[#d5ad78] px-7 text-sm font-medium text-[#18211d] transition-colors hover:bg-[#e5c497] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e5c497]"
               >
                 即刻订座 <ArrowUpRight />
               </a>
               <a
                 href="#menu"
-                className={cn(
-                  buttonVariants({ variant: 'outline' }),
-                  'h-12 rounded-none border-white/40 bg-transparent px-7 text-white hover:bg-white hover:text-[#18211d]',
-                )}
+                className="inline-flex h-12 items-center justify-center gap-2 border border-white/40 bg-transparent px-7 text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#18211d] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 查看本季菜单 <ArrowDownRight />
               </a>
@@ -178,12 +164,12 @@ export default function Home() {
                 className={index === 1 ? 'md:pt-20' : ''}
               >
                 <div className="group relative aspect-[4/5] overflow-hidden bg-[#ded7ca]">
-                  <Image
+                  {/* oxlint-disable-next-line next/no-img-element */}
+                  <img
                     src={dish.image}
                     alt={dish.name}
-                    fill
-                    sizes="(max-width: 767px) 100vw, 33vw"
-                    className="object-cover transition duration-700 group-hover:scale-[1.035]"
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.035]"
                   />
                 </div>
                 <div className="flex items-start justify-between border-b border-[#d2c8b8] py-5">
@@ -222,10 +208,7 @@ export default function Home() {
             </p>
             <a
               href="tel:+8657188986628"
-              className={cn(
-                buttonVariants(),
-                'h-13 w-full rounded-none bg-[#d5ad78] px-7 text-base text-[#18211d] hover:bg-[#e5c497] sm:w-auto',
-              )}
+              className="inline-flex h-13 w-full items-center justify-center gap-2 bg-[#d5ad78] px-7 text-base font-medium text-[#18211d] transition-colors hover:bg-[#e5c497] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e5c497] sm:w-auto"
             >
               致电预订 · 0571 8898 6628 <ArrowUpRight />
             </a>
