@@ -2,9 +2,9 @@
 import { ArrowDownRight, ArrowUpRight, Clock3, Leaf, MapPin, MoveDown, Phone } from 'lucide-vue-next';
 
 const dishes = [
-  { name: '桂花烟熏鸭', note: '龙井木 · 桂花蜜 · 时令青蔬', price: '¥128', image: '/dish-duck.jpg', number: '01' },
-  { name: '菌香手作豆腐', note: '云南菌菇 · 山泉豆腐 · 青花椒', price: '¥68', image: '/dish-tofu.jpg', number: '02' },
-  { name: '江南小笼', note: '黑猪肉 · 陈年香醋 · 鲜姜丝', price: '¥48', image: '/dish-dumpling.jpg', number: '03' },
+  { name: '桂花烟熏鸭', note: '龙井木慢熏，桂花蜜轻覆，留住秋日温润香气', price: '¥128', image: '/dish-duck.jpg', number: '01' },
+  { name: '菌香手作豆腐', note: '山泉豆腐柔润，云南菌菇与青花椒铺开山野鲜意', price: '¥68', image: '/dish-tofu.jpg', number: '02' },
+  { name: '江南小笼', note: '黑猪肉馅饱满多汁，一口尝尽姜丝与陈醋的清鲜', price: '¥48', image: '/dish-dumpling.jpg', number: '03' },
 ];
 </script>
 
